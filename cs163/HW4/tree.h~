@@ -1,0 +1,88 @@
+#include <cstring>
+#include <iostream>
+
+using namespace std;
+
+struct Keywords
+{
+	Keywords();
+	char * keyword;
+	
+};
+
+struct application
+{
+	application();
+	char * name;
+	Keywords * keywords;
+	char * description;
+	int rating;
+	int number_keywords;
+};
+
+struct node
+{
+	node * left;
+	node * right;
+	application * match;
+	char * keyword;
+	int key;
+};
+
+struct list_node
+{
+	list_node();
+	list_node * next;
+	application * app;
+};
+
+
+
+
+
+
+
+class Tree
+{
+	public:
+		Tree();
+		~Tree();
+	int	create_key(char * keyword);
+
+	int	add_app(char * name, Keywords key_array[], char * description, int rating, int number_keywords);
+
+	int	add_node(char * keyword, application * app);
+
+	int add_node(char * keyword, application * app, node * &root, int key);
+	
+	int add_node(node * root, node * temp);
+
+	int	retrieve(char * keyword, list_node *& match_list);
+
+	int	retrieve(char * keyword, list_node *& first_match, node * root, int key);
+
+	int	display(char * keyword);
+
+	int display(node * root, list_node * match_list);
+
+	
+	int display(list_node * &match_list);
+
+	int	display_all();
+
+	int remove( char * keyword);
+
+	int remove(char * keyword, node * root);
+
+	node * get_right(node * root);
+
+	node * get_left(node * root);
+	
+
+
+	private:
+		
+		
+		node * root;
+		
+};

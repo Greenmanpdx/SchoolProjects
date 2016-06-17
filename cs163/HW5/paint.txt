@@ -1,0 +1,10 @@
+Initial inspection:1:
+Make Estiamate:2:
+Accept Job:3:
+Plan Phase:4:5:
+Sand Walls:5:8:
+Wash Wall:6:8:
+Prime:7:8:
+Paint:8:
+Inspection:9:
+Sign Off:
