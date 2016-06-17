@@ -1,0 +1,74 @@
+
+#include "menu.h"
+
+
+
+
+
+class ingredient
+{
+	public:
+		ingredient();
+		ingredient(char * name, bool g, bool p, int units, day, month);
+		int create_key();
+		~ingredient();
+		
+
+
+	protected:
+		char * name;
+		bool gluten;
+		bool dairy;
+		bool peanuts;
+		int key;
+		int day, month;
+		int units;
+		menu_list * list;
+		ingredient_list * alternates;
+}
+
+
+class node:public ingredient
+{
+	public:
+		
+		node();
+		node(& ingredient);
+		node(char * name, bool g, bool d, bool p);
+		~node();
+		
+
+	protected:
+		
+		node * left;
+		node * right;
+
+	
+	
+}
+
+class menu_list: public LLL
+ {
+	public:
+
+		menu_list();
+		void display_all();
+		void display(list_node * head);
+		
+	protected:
+
+		menu_node * head;
+}
+
+class menu_node: public list_node
+{
+	public:
+		menu_node();
+		void display();
+
+		
+		
+	protected:
+
+		menu_node * next;
+}	 

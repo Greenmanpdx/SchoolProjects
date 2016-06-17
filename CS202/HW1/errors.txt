@@ -1,0 +1,8 @@
+location.cpp: In member function ‘node*& node::go_back()’:
+location.cpp:394:9: warning: reference to local variable ‘current’ returned [-Wreturn-local-addr]
+  node * current;
+         ^
+location.cpp: In member function ‘node*& node::go_forward()’:
+location.cpp:401:9: warning: reference to local variable ‘current’ returned [-Wreturn-local-addr]
+  node * current;
+         ^

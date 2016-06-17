@@ -1,0 +1,453 @@
+bst.cpp: In constructor ‘bst::bst(std::ifstream&)’:
+bst.cpp:42:9: error: invalid conversion from ‘char*’ to ‘char’ [-fpermissive]
+   g_alt =  new char[strlen(temp+1)];
+         ^
+bst.cpp:43:21: error: invalid conversion from ‘char’ to ‘char*’ [-fpermissive]
+   strcpy(g_alt, temp);
+                     ^
+In file included from /usr/include/c++/4.8/cstring:42:0,
+                 from bst.cpp:6:
+/usr/include/string.h:129:14: error:   initializing argument 1 of ‘char* strcpy(char*, const char*)’ [-fpermissive]
+ extern char *strcpy (char *__restrict __dest, const char *__restrict __src)
+              ^
+bst.cpp:47:9: error: invalid conversion from ‘char*’ to ‘char’ [-fpermissive]
+   g_alt = new char[strlen("None" +1)];
+         ^
+bst.cpp:48:23: error: invalid conversion from ‘char’ to ‘char*’ [-fpermissive]
+   strcpy(g_alt, "None");
+                       ^
+In file included from /usr/include/c++/4.8/cstring:42:0,
+                 from bst.cpp:6:
+/usr/include/string.h:129:14: error:   initializing argument 1 of ‘char* strcpy(char*, const char*)’ [-fpermissive]
+ extern char *strcpy (char *__restrict __dest, const char *__restrict __src)
+              ^
+bst.cpp:59:9: error: invalid conversion from ‘char*’ to ‘char’ [-fpermissive]
+   d_alt =  new char[strlen(temp+1)];
+         ^
+bst.cpp:60:21: error: invalid conversion from ‘char’ to ‘char*’ [-fpermissive]
+   strcpy(d_alt, temp);
+                     ^
+In file included from /usr/include/c++/4.8/cstring:42:0,
+                 from bst.cpp:6:
+/usr/include/string.h:129:14: error:   initializing argument 1 of ‘char* strcpy(char*, const char*)’ [-fpermissive]
+ extern char *strcpy (char *__restrict __dest, const char *__restrict __src)
+              ^
+bst.cpp:64:3: error: ‘d_’ was not declared in this scope
+   d_ alt = new char[strlen("None" +1)];
+   ^
+bst.cpp:64:6: error: expected ‘;’ before ‘alt’
+   d_ alt = new char[strlen("None" +1)];
+      ^
+bst.cpp:65:23: error: invalid conversion from ‘char’ to ‘char*’ [-fpermissive]
+   strcpy(d_alt, "None");
+                       ^
+In file included from /usr/include/c++/4.8/cstring:42:0,
+                 from bst.cpp:6:
+/usr/include/string.h:129:14: error:   initializing argument 1 of ‘char* strcpy(char*, const char*)’ [-fpermissive]
+ extern char *strcpy (char *__restrict __dest, const char *__restrict __src)
+              ^
+bst.cpp:75:9: error: invalid conversion from ‘char*’ to ‘char’ [-fpermissive]
+   p_alt =  new char[strlen(temp+1)];
+         ^
+bst.cpp:76:21: error: invalid conversion from ‘char’ to ‘char*’ [-fpermissive]
+   strcpy(p_alt, temp);
+                     ^
+In file included from /usr/include/c++/4.8/cstring:42:0,
+                 from bst.cpp:6:
+/usr/include/string.h:129:14: error:   initializing argument 1 of ‘char* strcpy(char*, const char*)’ [-fpermissive]
+ extern char *strcpy (char *__restrict __dest, const char *__restrict __src)
+              ^
+bst.cpp:80:9: error: invalid conversion from ‘char*’ to ‘char’ [-fpermissive]
+   p_alt = new char[strlen("None" +1)];
+         ^
+bst.cpp:81:23: error: invalid conversion from ‘char’ to ‘char*’ [-fpermissive]
+   strcpy(p_alt, "None");
+                       ^
+In file included from /usr/include/c++/4.8/cstring:42:0,
+                 from bst.cpp:6:
+/usr/include/string.h:129:14: error:   initializing argument 1 of ‘char* strcpy(char*, const char*)’ [-fpermissive]
+ extern char *strcpy (char *__restrict __dest, const char *__restrict __src)
+              ^
+bst.cpp:83:82: error: invalid conversion from ‘char’ to ‘char*’ [-fpermissive]
+  inc_node = add(in_name, in_g, g_alt, in_d, d_alt, in_p, p_alt, units, day, month);
+                                                                                  ^
+In file included from bst.cpp:1:0:
+bst.h:22:8: error:   initializing argument 3 of ‘void bst::add(char*, bool, char*, bool, char*, bool, char*, int, int, int)’ [-fpermissive]
+   void add(char *in_name, bool in_g, char * g_alt, bool in_d, char * d_alt, bool in_p, char* p_alt, int in_units, int in_day, int in_month);//
+        ^
+bst.cpp:83:82: error: invalid conversion from ‘char’ to ‘char*’ [-fpermissive]
+  inc_node = add(in_name, in_g, g_alt, in_d, d_alt, in_p, p_alt, units, day, month);
+                                                                                  ^
+In file included from bst.cpp:1:0:
+bst.h:22:8: error:   initializing argument 5 of ‘void bst::add(char*, bool, char*, bool, char*, bool, char*, int, int, int)’ [-fpermissive]
+   void add(char *in_name, bool in_g, char * g_alt, bool in_d, char * d_alt, bool in_p, char* p_alt, int in_units, int in_day, int in_month);//
+        ^
+bst.cpp:83:82: error: invalid conversion from ‘char’ to ‘char*’ [-fpermissive]
+  inc_node = add(in_name, in_g, g_alt, in_d, d_alt, in_p, p_alt, units, day, month);
+                                                                                  ^
+In file included from bst.cpp:1:0:
+bst.h:22:8: error:   initializing argument 7 of ‘void bst::add(char*, bool, char*, bool, char*, bool, char*, int, int, int)’ [-fpermissive]
+   void add(char *in_name, bool in_g, char * g_alt, bool in_d, char * d_alt, bool in_p, char* p_alt, int in_units, int in_day, int in_month);//
+        ^
+bst.cpp:83:11: error: void value not ignored as it ought to be
+  inc_node = add(in_name, in_g, g_alt, in_d, d_alt, in_p, p_alt, units, day, month);
+           ^
+bst.cpp:87:1: error: a function-definition is not allowed here before ‘{’ token
+ {
+ ^
+bst.cpp:95:1: error: a function-definition is not allowed here before ‘{’ token
+ {
+ ^
+bst.cpp:186:1: error: expected ‘}’ at end of input
+ }
+ ^
+In file included from ingredient.cpp:1:0:
+ingredient.h:55:1: error: ‘menu’ does not name a type
+ menu.  char * get_name(){return name;}
+ ^
+ingredient.cpp: In constructor ‘ingredient::ingredient(char*, bool, char*, bool, char*, bool, char*, int, int, int)’:
+ingredient.cpp:33:13: error: invalid conversion from ‘char*’ to ‘char’ [-fpermissive]
+  gluten_alt = new char[strlen(g_alt)+1];
+             ^
+ingredient.cpp:34:26: error: invalid conversion from ‘char’ to ‘char*’ [-fpermissive]
+  strcpy(gluten_alt, g_alt);
+                          ^
+In file included from /usr/include/c++/4.8/cstring:42:0,
+                 from ingredient.cpp:5:
+/usr/include/string.h:129:14: error:   initializing argument 1 of ‘char* strcpy(char*, const char*)’ [-fpermissive]
+ extern char *strcpy (char *__restrict __dest, const char *__restrict __src)
+              ^
+ingredient.cpp:36:12: error: invalid conversion from ‘char*’ to ‘char’ [-fpermissive]
+  dairy_alt = new char[strlen(d_alt)+1];
+            ^
+ingredient.cpp:37:25: error: invalid conversion from ‘char’ to ‘char*’ [-fpermissive]
+  strcpy(dairy_alt, d_alt);
+                         ^
+In file included from /usr/include/c++/4.8/cstring:42:0,
+                 from ingredient.cpp:5:
+/usr/include/string.h:129:14: error:   initializing argument 1 of ‘char* strcpy(char*, const char*)’ [-fpermissive]
+ extern char *strcpy (char *__restrict __dest, const char *__restrict __src)
+              ^
+ingredient.cpp:39:14: error: invalid conversion from ‘char*’ to ‘char’ [-fpermissive]
+  peanuts_alt = new char[strlen(p_alt)+1];
+              ^
+ingredient.cpp:40:27: error: invalid conversion from ‘char’ to ‘char*’ [-fpermissive]
+  strcpy(peanuts_alt, p_alt);
+                           ^
+In file included from /usr/include/c++/4.8/cstring:42:0,
+                 from ingredient.cpp:5:
+/usr/include/string.h:129:14: error:   initializing argument 1 of ‘char* strcpy(char*, const char*)’ [-fpermissive]
+ extern char *strcpy (char *__restrict __dest, const char *__restrict __src)
+              ^
+ingredient.cpp: In constructor ‘node::node()’:
+ingredient.cpp:67:25: error: value-initialization of reference type ‘node&’
+ node::node():ingredient()
+                         ^
+ingredient.cpp: At global scope:
+ingredient.cpp:74:11: error: expected constructor, destructor, or type conversion before ‘(’ token
+ node::node(& ingredient):ingredient(ingredient)
+           ^
+ingredient.cpp: In constructor ‘node::node(char*, bool, char*, bool, char*, bool, char*, int, int, int)’:
+ingredient.cpp:81:226: error: expression list treated as compound expression in mem-initializer [-fpermissive]
+ node::node(char *in_name, bool in_g, char * g_alt, bool in_d, char * d_alt, bool in_p, char* p_alt, int in_units, int in_day, int in_month): ingredient(in_name, in_g, g_alt,in_d, d_alt, in_p, p_alt, in_units, in_day, in_month)
+                                                                                                                                                                                                                                  ^
+ingredient.cpp:81:226: error: invalid initialization of reference of type ‘node&’ from expression of type ‘int’
+ingredient.cpp: At global scope:
+ingredient.cpp:124:6: error: redefinition of ‘void menu_node::set_next(menu_node*&)’
+ void menu_node::set_next(menu_node *& toSet)
+      ^
+ingredient.cpp:114:6: error: ‘void menu_node::set_next(menu_node*&)’ previously defined here
+ void menu_node::set_next(menu_node *& toSet)
+      ^
+In file included from menu.h:4:0,
+                 from menu.cpp:1:
+ingredient.h:55:1: error: ‘menu’ does not name a type
+ menu.  char * get_name(){return name;}
+ ^
+In file included from menu.cpp:1:0:
+menu.h:53:9: error: expected ‘:’ before ‘list_node’
+  public list_node
+         ^
+menu.h:55:13: error: return type specification for constructor invalid
+   menu_item();//
+             ^
+menu.h:80:26: error: ‘ingreient_list’ has not been declared
+   entree(char * in_name, ingreient_list *& in_list);//
+                          ^
+menu.cpp:17:38: error: ‘ingreient_list’ has not been declared
+ menu_item::meun_item(char * in_name, ingreient_list *& in_list, bst * ing_tree)
+                                      ^
+menu.cpp:17:79: error: ISO C++ forbids declaration of ‘meun_item’ with no type [-fpermissive]
+ menu_item::meun_item(char * in_name, ingreient_list *& in_list, bst * ing_tree)
+                                                                               ^
+menu.cpp:17:79: error: no ‘int menu_item::meun_item(char*, int*&, bst*)’ member function declared in class ‘menu_item’
+menu.cpp:53:15: error: expected constructor, destructor, or type conversion before ‘(’ token
+ entree::entree((char * in_name, ingreient_list *& in_list)::meun_item(char * in_name, ingreient_list *& in_list)
+               ^
+menu.cpp:61:51: error: expected initializer before ‘)’ token
+ void entree::purchase(int amount, bst *& ing_list))
+                                                   ^
+menu.cpp: In member function ‘virtual void entree::display()’:
+menu.cpp:77:16: error: no matching function for call to ‘ingredient_list::display()’
+  list->display();
+                ^
+menu.cpp:77:16: note: candidate is:
+In file included from menu.cpp:1:0:
+menu.h:40:8: note: void ingredient_list::display(list_node*)
+   void display(list_node * current);//
+        ^
+menu.h:40:8: note:   candidate expects 1 argument, 0 provided
+menu.cpp: At global scope:
+menu.cpp:80:57: error: expected initializer before ‘::’ token
+ drink::drink(char * in_name, ingredient_list *& in_list)::meun_item(char * in_name, ingreient_list *& in_list)
+                                                         ^
+menu.cpp:103:49: error: no ‘void drink::purchase(int, bst*&)’ member function declared in class ‘drink’
+ void drink::purchase(int amount, bst *& ing_list)
+                                                 ^
+menu.cpp:110:38: error: ‘ingreient_list’ has not been declared
+ appetizer::appetizer(char * in_name, ingreient_list *& in_list)::meun_item(char * in_name, ingreient_list *& in_list)
+                                      ^
+menu.cpp:110:64: error: expected initializer before ‘::’ token
+ appetizer::appetizer(char * in_name, ingreient_list *& in_list)::meun_item(char * in_name, ingreient_list *& in_list)
+                                                                ^
+menu.cpp:134:53: error: no ‘void appetizer::purchase(int, bst*&)’ member function declared in class ‘appetizer’
+ void appetizer::purchase(int amount, bst *& ing_list)
+                                                     ^
+menu.cpp:147:6: error: prototype for ‘void ingredient_list::add(char*, char*, bst*)’ does not match any in class ‘ingredient_list’
+ void ingredient_list::add(char * name, char * meal, bst * ing_tree)
+      ^
+In file included from menu.cpp:1:0:
+menu.h:36:8: error: candidate is: void ingredient_list::add(char*, char*, bst*&)
+   void add(char * name, char * meal, bst *& ing_tree);//
+        ^
+menu.cpp: In member function ‘void ingredient_list::order(bst*&)’:
+menu.cpp:167:24: error: no matching function for call to ‘ingredient_list::order(list_node*)’
+  order(head->get_next());
+                        ^
+menu.cpp:167:24: note: candidates are:
+menu.cpp:162:6: note: void ingredient_list::order(bst*&)
+ void ingredient_list::order(bst *& ing_list)
+      ^
+menu.cpp:162:6: note:   no known conversion for argument 1 from ‘list_node*’ to ‘bst*&’
+In file included from menu.cpp:1:0:
+menu.h:38:8: note: void ingredient_list::order(list_node*, bst*&)
+   void order(list_node * current, bst *& ing_list);//
+        ^
+menu.h:38:8: note:   candidate expects 2 arguments, 1 provided
+menu.cpp: At global scope:
+menu.cpp:170:6: error: prototype for ‘void ingredient_list::order(ingredient_node*, bst*&)’ does not match any in class ‘ingredient_list’
+ void ingredient_list::order(ingredient_node * current, bst *& ing_list)
+      ^
+In file included from menu.cpp:1:0:
+menu.h:38:8: error: candidates are: void ingredient_list::order(list_node*, bst*&)
+   void order(list_node * current, bst *& ing_list);//
+        ^
+menu.cpp:162:6: error:                 void ingredient_list::order(bst*&)
+ void ingredient_list::order(bst *& ing_list)
+      ^
+menu.cpp: In member function ‘void ingredient_list::display(list_node*)’:
+menu.cpp:196:11: error: ‘class list_node’ has no member named ‘display’
+  current->display();
+           ^
+menu.cpp: In member function ‘void ingredient_list::purchase(int, bst*&)’:
+menu.cpp:205:34: error: invalid conversion from ‘list_node*’ to ‘ingredient_node*’ [-fpermissive]
+  purchase(amount, head->get_next(), ing_list);
+                                  ^
+In file included from menu.cpp:1:0:
+menu.h:42:8: error:   initializing argument 2 of ‘void ingredient_list::purchase(int, ingredient_node*, bst*&)’ [-fpermissive]
+   void purchase(int amount, ingredient_node * toPur, bst *& ing_list);//
+        ^
+menu.cpp: At global scope:
+menu.cpp:208:6: error: prototype for ‘void ingredient_list::purchase(int, ingredient_node*)’ does not match any in class ‘ingredient_list’
+ void ingredient_list::purchase(int amount, ingredient_node * toPur)
+      ^
+In file included from menu.cpp:1:0:
+menu.h:42:8: error: candidates are: void ingredient_list::purchase(int, ingredient_node*, bst*&)
+   void purchase(int amount, ingredient_node * toPur, bst *& ing_list);//
+        ^
+menu.cpp:200:6: error:                 void ingredient_list::purchase(int, bst*&)
+ void ingredient_list::purchase(int amount, bst *& ing_list)
+      ^
+menu.cpp: In member function ‘void ingredient_node::order(bst*&)’:
+menu.cpp:231:44: error: ‘class ingredient’ has no member named ‘get_name’
+  node * toOrder = ing_list->retrieve(item->get_name());
+                                            ^
+menu.cpp: In member function ‘void ingredient_node::add(ingredient_node*, int, bst*)’:
+menu.cpp:239:27: error: request for member ‘retrieve’ in ‘ing_tree’, which is of pointer type ‘bst*’ (maybe you meant to use ‘->’ ?)
+  current->item = ing_tree.retrieve(char * name);
+                           ^
+menu.cpp:239:36: error: expected primary-expression before ‘char’
+  current->item = ing_tree.retrieve(char * name);
+                                    ^
+menu.cpp:240:11: error: ‘class ingredient_node’ has no member named ‘units_needed’
+  current->units_needed = needed;
+           ^
+menu.cpp: In member function ‘void ingredient_node::display()’:
+menu.cpp:246:16: error: ‘class ingredient’ has no member named ‘get_name’
+  cout << item->get_name() << endl;
+                ^
+menu.cpp: In member function ‘void ingredient_node::purchase(int, bst*&)’:
+menu.cpp:251:42: error: ‘class ingredient’ has no member named ‘get_name’
+  node * toPur = ing_list->retrieve(item->get_name());
+                                          ^
+menu.cpp:252:9: error: ‘class node’ has no member named ‘purchase’
+  toPur->purchase();
+         ^
+menu.cpp: In constructor ‘menu::menu(std::ifstream&, bst*&)’:
+menu.cpp:266:2: error: ‘temp’ was not declared in this scope
+  temp[15];
+  ^
+menu.cpp:270:14: error: cannot allocate an object of abstract type ‘ingredient_list’
+   list = new ingredient_list;
+              ^
+In file included from menu.cpp:1:0:
+menu.h:32:7: note:   because the following virtual functions are pure within ‘ingredient_list’:
+ class ingredient_list: public LLL
+       ^
+In file included from ingredient.h:5:0,
+                 from menu.h:4,
+                 from menu.cpp:1:
+bst.h:58:16: note: 	virtual void LLL::add()
+   virtual void add() = 0;
+                ^
+menu.cpp:272:25: error: expected primary-expression before ‘:’ token
+   getline(infile, temp, :);
+                         ^
+menu.cpp:273:8: error: invalid conversion from ‘char*’ to ‘char’ [-fpermissive]
+   meal = new char[strlen(temp)+1];
+        ^
+menu.cpp:276:25: error: expected primary-expression before ‘:’ token
+   getline(infile, temp, :);
+                         ^
+menu.cpp:280:25: error: expected primary-expression before ‘:’ token
+   getline(infile, temp, :);
+                         ^
+menu.cpp:283:15: error: invalid conversion from ‘char*’ to ‘char’ [-fpermissive]
+    ingredient = new char[strlen(temp)+1];
+               ^
+menu.cpp:285:40: error: invalid conversion from ‘char’ to ‘char*’ [-fpermissive]
+    list->add(ingredient, name, ing_tree);
+                                        ^
+In file included from menu.cpp:1:0:
+menu.h:36:8: error:   initializing argument 1 of ‘void ingredient_list::add(char*, char*, bst*&)’ [-fpermissive]
+   void add(char * name, char * meal, bst *& ing_tree);//
+        ^
+menu.cpp:286:39: error: invalid conversion from ‘char’ to ‘char*’ [-fpermissive]
+    ing_tree->add_menu(name, ingredient);
+                                       ^
+In file included from ingredient.h:5:0,
+                 from menu.h:4,
+                 from menu.cpp:1:
+bst.h:29:8: error:   initializing argument 2 of ‘void bst::add_menu(char*, char*)’ [-fpermissive]
+   void add_menu(char * menu_name, char *ing_name );//
+        ^
+menu.cpp:287:26: error: expected primary-expression before ‘:’ token
+    getline(infile, temp, :);
+                          ^
+menu.cpp:291:24: error: invalid conversion from ‘char’ to ‘const char*’ [-fpermissive]
+   if(strcmp(meal, "din") == 0)
+                        ^
+In file included from /usr/include/c++/4.8/cstring:42:0,
+                 from menu.cpp:6:
+/usr/include/string.h:144:12: error:   initializing argument 1 of ‘int strcmp(const char*, const char*)’ [-fpermissive]
+ extern int strcmp (const char *__s1, const char *__s2)
+            ^
+menu.cpp:293:41: error: cannot allocate an object of abstract type ‘entree’
+             item = new entree(name, list);
+                                         ^
+In file included from menu.cpp:1:0:
+menu.h:75:7: note:   because the following virtual functions are pure within ‘entree’:
+ class entree: public menu_item
+       ^
+menu.h:57:16: note: 	virtual void menu_item::purchas(int)
+   virtual void purchas(int amount) = 0;
+                ^
+menu.h:69:16: note: 	virtual void menu_item::stock(int, ingredient_node*)
+   virtual void stock(int amount, ingredient_node * head) = 0;
+                ^
+menu.cpp:298:30: error: invalid conversion from ‘char’ to ‘const char*’ [-fpermissive]
+         if(strcmp(meal, "app") == 0)
+                              ^
+In file included from /usr/include/c++/4.8/cstring:42:0,
+                 from menu.cpp:6:
+/usr/include/string.h:144:12: error:   initializing argument 1 of ‘int strcmp(const char*, const char*)’ [-fpermissive]
+ extern int strcmp (const char *__s1, const char *__s2)
+            ^
+menu.cpp:300:44: error: cannot allocate an object of abstract type ‘appetizer’
+             item = new appetizer(name, list);
+                                            ^
+In file included from menu.cpp:1:0:
+menu.h:103:7: note:   because the following virtual functions are pure within ‘appetizer’:
+ class appetizer: public menu_item
+       ^
+menu.h:57:16: note: 	virtual void menu_item::purchas(int)
+   virtual void purchas(int amount) = 0;
+                ^
+menu.h:69:16: note: 	virtual void menu_item::stock(int, ingredient_node*)
+   virtual void stock(int amount, ingredient_node * head) = 0;
+                ^
+menu.cpp:305:32: error: invalid conversion from ‘char’ to ‘const char*’ [-fpermissive]
+         if(strcmp(meal, "drink")== 0)
+                                ^
+In file included from /usr/include/c++/4.8/cstring:42:0,
+                 from menu.cpp:6:
+/usr/include/string.h:144:12: error:   initializing argument 1 of ‘int strcmp(const char*, const char*)’ [-fpermissive]
+ extern int strcmp (const char *__s1, const char *__s2)
+            ^
+menu.cpp:307:40: error: cannot allocate an object of abstract type ‘drink’
+             item = new drink(name, list);
+                                        ^
+In file included from menu.cpp:1:0:
+menu.h:91:7: note:   because the following virtual functions are pure within ‘drink’:
+ class drink: public menu_item
+       ^
+menu.h:57:16: note: 	virtual void menu_item::purchas(int)
+   virtual void purchas(int amount) = 0;
+                ^
+menu.h:69:16: note: 	virtual void menu_item::stock(int, ingredient_node*)
+   virtual void stock(int amount, ingredient_node * head) = 0;
+                ^
+menu.cpp: At global scope:
+menu.cpp:323:6: error: prototype for ‘void menu::add(menu_item*&, menu_item*&)’ does not match any in class ‘menu’
+ void menu::add(menu_item *& item, menu_item *& head)
+      ^
+In file included from menu.cpp:1:0:
+menu.h:126:16: error: candidate is: virtual void menu::add(menu_item*, menu_item*)
+   virtual void add(menu_item * item, menu_item * head);//
+                ^
+In file included from menu.h:4:0,
+                 from restraunt.cpp:3:
+ingredient.h:55:1: error: ‘menu’ does not name a type
+ menu.  char * get_name(){return name;}
+ ^
+In file included from restraunt.cpp:3:0:
+menu.h:53:9: error: expected ‘:’ before ‘list_node’
+  public list_node
+         ^
+menu.h:55:13: error: return type specification for constructor invalid
+   menu_item();//
+             ^
+menu.h:80:26: error: ‘ingreient_list’ has not been declared
+   entree(char * in_name, ingreient_list *& in_list);//
+                          ^
+restraunt.cpp: In function ‘int main()’:
+restraunt.cpp:35:7: error: cannot declare variable ‘Menu’ to be of abstract type ‘menu’
+  menu Menu;
+       ^
+In file included from restraunt.cpp:3:0:
+menu.h:121:7: note:   because the following virtual functions are pure within ‘menu’:
+ class menu: public LLL
+       ^
+In file included from ingredient.h:5:0,
+                 from menu.h:4,
+                 from restraunt.cpp:3:
+bst.h:58:16: note: 	virtual void LLL::add()
+   virtual void add() = 0;
+                ^
+restraunt.cpp:36:25: error: cannot allocate an object of abstract type ‘menu’
+  Menu = new menu(in_file);
+                         ^
+In file included from restraunt.cpp:3:0:
+menu.h:121:7: note:   since type ‘menu’ has pure virtual functions
+ class menu: public LLL
+       ^
